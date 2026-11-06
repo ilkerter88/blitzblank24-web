@@ -2,7 +2,7 @@
 // Die Seite selbst holt er zuerst frisch (so kommen Neuerungen an), die
 // Bausteine mit festem Namen kommen aus dem Speicher – die ändern sich nie,
 // eine neue Version bekommt neue Namen.
-const ABLAGE = 'blitzblank24-v1';
+const ABLAGE = 'blitzblank24-v2';
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(ABLAGE).then((c) => c.addAll(['./', './manifest.webmanifest', './apple-touch-icon.png'])));
